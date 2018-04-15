@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- enabled="false" -->
+<!-- include -->
+<suite verbose="1" name="Example suite">
+
+    <test name="Тест регистрации" preserve-order="true" enabled="true">
+        <classes>
+            <class name="init.Registration">
+                <methods>
+                    <include name="Navigate_Cookies_Close"/>
+                    <include name="Navigate_Tab_Registration"/>
+                    <include name="Data_Generate_RegData"/>
+                    <include name="Fill_RegForm"/>
+                    <include name="Do_Register"/>
+                    <include name="Data_GetConfirmationEmail"/>
+                    <include name="Navigate_ConfirmationLink"/>
+                    <include name="Do_RefuseToSpecifyINN"/>
+                    <include name="Check_LoginSuccessful"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
